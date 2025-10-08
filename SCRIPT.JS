@@ -110,8 +110,16 @@ function nextQuestion() {
 window.onload = function() {
   loadQuestion();
 };
-// ✨ Efek animasi muncul saat scroll
+// ✨ Efek animasi saat scroll
 window.addEventListener('scroll', () => {
+// Biar section pertama langsung muncul tanpa harus discroll
+window.addEventListener('load', () => {
+  const firstSection = document.querySelector('section');
+  if (firstSection) {
+    firstSection.style.opacity = '1';
+    firstSection.style.transform = 'translateY(0)';
+  }
+});
   const sections = document.querySelectorAll('section');
   sections.forEach(sec => {
     const top = window.scrollY;
@@ -127,11 +135,4 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// ✨ Pastikan section pertama langsung tampil saat halaman dimuat
-window.addEventListener('DOMContentLoaded', () => {
-  const firstSection = document.querySelector('section');
-  if (firstSection) {
-    firstSection.style.opacity = '1';
-    firstSection.style.transform = 'translateY(0)';
-  }
-});
+
