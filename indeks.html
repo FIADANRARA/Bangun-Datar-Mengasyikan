@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Bangun Datar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Belajar Bangun Datar</h1>
+    <nav>
+      <a href="#materi">Materi</a>
+      <a href="#interaktif">Hitung</a>
+      <a href="#kuis">Kuis</a>
+      <a href="#tentang">Tentang</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="beranda">
+      <h2>Selamat Datang!</h2>
+      <p>Halo students! kali ini kita akan membantu kamu memahami bangun datar: persegi, persegi panjang, segitiga, dan lingkaran. Yuk mulai belajar!</p>
+    </section>
+
+    <section id="materi">
+      <h2>Materi Bangun Datar</h2>
+      <ul>
+        <li><strong>Persegi:</strong> Luas = s x s, Keliling = 4 x s</li>
+        <li><strong>Persegi Panjang:</strong> Luas = p x l, Keliling = 2 x (p + l)</li>
+        <li><strong>Segitiga:</strong> Luas = 1/2 x a x t, Keliling = a + b + c</li>
+        <li><strong>Lingkaran:</strong> Luas = p x r x r, Keliling = 2 x p x r</li>
+      </ul>
+    </section>
+
+    <section id="interaktif">
+      <h2>Kalkulator Bangun Datar</h2>
+      <p>Pilih jenis bangun dan masukkan nilainya:</p>
+
+      <label>Jenis Bangun:</label>
+      <select id="jenis">
+        <option value="persegi">Persegi</option>
+        <option value="persegiPanjang">Persegi Panjang</option>
+        <option value="segitiga">Segitiga</option>
+        <option value="lingkaran">Lingkaran</option>
+      </select>
+
+      <div id="input-area"></div>
+
+      <button onclick="hitung()">Hitung</button>
+      <p id="hasil"></p>
+    </section>
+
+    <section id="kuis">
+  <h2>Kuis Cepat</h2>
+  <p>Jawab pertanyaan berikut untuk menguji pemahamanmu!</p>
+
+  <div id="quiz-container">
+    <p id="question"></p>
+    <div id="options"></div>
+    <button id="next-btn" onclick="nextQuestion()">Selanjutnya</button>
+    <p id="score"></p>
+  </div>
+</section>
+
+
+    <section id="tentang">
+      <h2>Tentang Kami</h2>
+      <p>Tim Pembuat: Aliffia Hilva & Fauziah Rahma</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 Bersama Fia dan Rara Belajar Bangun Datar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
